@@ -6,116 +6,135 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="main-header">
+    <header class="main-header">
       <nav class="main-navigation">
-        <div class="main-logo">
-          <img src="img/logo.png" alt="">
-        </div>
+        <img src="img/logo.png" alt="Nёrds" width="139" height="56">
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="inner.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="user-block">
         <a class="basket" href="#">Корзина</a>
-    </div>
+      </div>
+    </header>
 
     <!-- Слайдер  -->
 
-    <div class="slider">
-      <input type="radio" id="btn-1" name="toggle" checked>
-      <input type="radio" id="btn-2" name="toggle">
-      <input type="radio" id="btn-3" name="toggle">
-      <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
-      </div>
-      <div class="slider-inner">
-          <div class="slider-slides">
-            <div class="slider-item">
-              <h2>Долго, дорого,
-              скрупулезно.</h2>
-              <p>Математически выверенный дизайн
-               для вашего сайта или мобильного приложения.</p>
-              <a href="#">Узнать больше</a>
+    <main class="main">
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+        </div>
+        <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="slider-item">
+                <h2>Долго, дорого,
+                скрупулезно.</h2>
+                <p>Математически выверенный дизайн
+                 для вашего сайта или мобильного приложения.</p>
+                <a href="#">Узнать больше</a>
+              </div>
+              <div class="slider-item">
+                <h2>Любите ли вы математику, как любим ее мы?</h2>
+                <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+                <a href="#">Узнать больше</a>
+              </div>
+              <div class="slider-item">
+                <h2>Только наркотики, только хардкор!</h2>
+                <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                <a href="#">Узнать больше</a>
+              </div>
             </div>
-          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Блок особенностей  -->
+      <!-- Блок особенностей  -->
 
-    <div class="features">
-      <div class="features-item">
-        <img src="" alt="" width="" height="">
-        <h2>Веб-сайты</h2>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="#">Заказать</a>
+      <div class="features">
+        <div class="features-item">
+          <img src="img/features-1.png" alt="" width="240" height="124">
+          <h2>Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="img/features-2.png" alt="" width="240" height="124">
+          <h2>Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#">Заказать</a>
+        </div>
+        <div class="features-item">
+          <img src="img/features-3.png" alt="" width="240" height="124">
+          <h2>Презентации</h2>
+          <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
+          <a href="#">Заказать</a>
+        </div>
       </div>
-      <div class="features-item">
-        <img src="" alt="" width="" height="">
-        <h2>Приложения</h2>
-        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="#">Заказать</a>
-      </div>
-      <div class="features-item">
-        <img src="" alt="" width="" height="">
-        <h2>Презентации</h2>
-        <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-        <a href="#">Заказать</a>
-      </div>
-    </div>
 
-    <div class="about">
-      <div class="about-studio"></div>
-      <div class="about-services">
-        <h2>Выполняем заказы на разработку:</h2>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
+      <div class="about">
+        <div class="about-studio">
+          <p><b>Мы — маленькая, но гордая
+          дизайн-студия из Краснодара. </b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+        </div>
+        <div class="about-logo">
+          <img src="img/logo.png" width="187" height="75" alt="Nёrds">
+          <span class="about-since">since 2004</span>
+        </div>
+        <div class="about-services">
+          <h2>Выполняем заказы на разработку:</h2>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-works">
+          <h2>Как мы работаем:</h2>
+          <ul>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
       </div>
-      <div class="about-works">
-        <h2>Как мы работаем:</h2>
-        <ul>
-          <li>С самоотдачей 146%</li>
-          <li>Соблюдая сроки на 100%</li>
-          <li>По предоплате 50%</li>
-        </ul>
+
+      <div class="links">
+        <a href="#" class="glukhanko">glukhanko</a>
+        <a href="#" class="htmlacademy">htmlacademy</a>
+        <a href="#" class="barbershop">barbershop</a>
       </div>
-    </div>
 
-    <div class="links">
-      <a href="#" class="glukhanko">glukhanko</a>
-      <a href="#" class="htmlacademy">htmlacademy</a>
-      <a href="#" class="barbershop">barbershop</a>
-    </div>
+      <!-- Карта -->
 
-    <!-- Карта -->
-
-    <div class="map">
-        <div class="map-contacts">
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
-        тел. +7 (812)275-75-75</p>
+      <div class="map">
+          <div class="map-contacts">
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
+          тел. +7 (812)275-75-75</p>
+        </div>
       </div>
-    </div>
+    </main>
 
     <!-- Подвал -->
 
-    <div class="main-footer">
+    <footer class="main-footer">
       <div class="footer-social">
-        <a href="#" class="vk"></a>
-        <a href="#" class="fb"></a>
-        <a href="#" class="inst"></a>
+        <a href="https://new.vk.com" class="vk"></a>
+        <a href="https://facebook.com" class="fb"></a>
+        <a href="https://www.instagram.com" class="inst"></a>
         <b>Давайте дружить, это выгодно!</b><br>
         Скидка 10% для друзей из социальных сетей.
       </div>
-    </div>
+    </footer>
 
   </body>
 </html>
