@@ -3,31 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-      <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	</head>
   <body>
-    <header class="inner-header">
-      <nav class="inner-navigation">
-        <a href="index.html"><img src="img/inner-logo.png" width="139" height="56" alt="Nёrds"></a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <a class="basket" href="#">Корзина</a>
+    <header class="inner-header clearfix">
+      <div class="container">
+        <nav class="inner-navigation ">
+          <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nёrds"></a>
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><span>Магазин</span></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
+        <h1>Добро пожаловать в магазин<br>
+        готовых макетов</h1>
       </div>
-      <h1 class="inner-title">Добро пожаловать в магазин<br>
-      готовых макетов</h1>
+
     </header>
 
+    <main class="container clearfix">
 
-    <!-- Цена -->
+      <!-- Цена -->
 
-    <main class="inner">
       <form class="filters">
         <fieldset class="filters-cost">
           <label>
@@ -94,92 +97,94 @@
       <!-- Товары -->
 
       <div class="goods">
-        <div class="goods-item">
-          <div class="goods-title">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="goods-items">
+          <div class="goods-item">
+            <div class="goods-title">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="img/image-1.jpg" width="240" height="240" alt="Aviator">
+            <div class="goods-modal">
+              <h2>AVIATOR</h2>
+              <p class="goods-info">Одностраничный макет<br>
+              с авторским дизайном</p>
+              <a href="#">8000 Р.</a>
+            </div>
           </div>
-          <img src="img/image-1.jpg" width="240" height="240" alt="Aviator">
-          <div class="goods-modal">
-            <h2>AVIATOR</h2>
-            <p class="goods-info">Одностраничный макет<br>
-            с авторским дизайном</p>
-            <a href="#">8000 Р.</a>
+          <div class="goods-item">
+            <div class="goods-title">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="img/image-2.jpg" width="240" height="240" alt="Sunset">
+            <div class="goods-modal">
+              <h2>sunset</h2>
+              <p class="goods-info">Интернет-магазин<br>
+              с личным кабинетом</p>
+              <a href="#">10000 Р.</a>
+            </div>
+          </div>
+          <div class="goods-item">
+            <div class="goods-title">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="img/image-3.jpg" width="240" height="240" alt="FORTE">
+            <div class="goods-modal">
+              <h2>FORTE</h2>
+              <p class="goods-info">Отличный макет<br> для личного блога</p>
+              <a href="#">5000 Р.</a>
+            </div>
+          </div>
+          <div class="goods-item">
+            <div class="goods-title">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="img/image-4.jpg" width="240" height="240" alt="Modern Organic THAI">
+            <div class="goods-modal">
+              <h2>Modern Organic THAI</h2>
+              <p class="goods-info">Сайт для ресторана<br> быстрого питания</p>
+              <a href="#">12000 Р.</a>
+            </div>
+          </div>
+          <div class="goods-item">
+            <div class="goods-title">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="img/image-5.jpg" width="239" height="240" alt="AVENUE">
+            <div class="goods-modal">
+              <h2>AVENUE</h2>
+              <p class="goods-info">Макет для блога<br>  о путешествиях</p>
+              <a href="#">8000 Р.</a>
+            </div>
+          </div>
+          <div class="goods-item">
+            <div class="goods-title">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <img src="img/image-6.jpg" width="239" height="240" alt="DOVETAIL">
+            <div class="goods-modal">
+              <h2>DOVETAIL</h2>
+              <p class="goods-info">Интернет-магазин<br> с галереей товаров</p>
+              <a href="#">14000 Р.</a>
+            </div>
           </div>
         </div>
-        <div class="goods-item">
-          <div class="goods-title">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <img src="img/image-2.jpg" width="240" height="240" alt="Sunset">
-          <div class="goods-modal">
-            <h2>sunset</h2>
-            <p class="goods-info">Интернет-магазин<br>
-            с личным кабинетом</p>
-            <a href="#">10000 Р.</a>
-          </div>
-        </div>
-        <div class="goods-item">
-          <div class="goods-title">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <img src="img/image-3.jpg" width="240" height="240" alt="FORTE">
-          <div class="goods-modal">
-            <h2>FORTE</h2>
-            <p class="goods-info">Отличный макет<br> для личного блога</p>
-            <a href="#">5000 Р.</a>
-          </div>
-        </div>
-        <div class="goods-item">
-          <div class="goods-title">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <img src="img/image-4.jpg" width="240" height="240" alt="Modern Organic THAI">
-          <div class="goods-modal">
-            <h2>Modern Organic THAI</h2>
-            <p class="goods-info">Сайт для ресторана<br> быстрого питания</p>
-            <a href="#">12000 Р.</a>
-          </div>
-        </div>
-        <div class="goods-item">
-          <div class="goods-title">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <img src="img/image-5.jpg" width="239" height="240" alt="AVENUE">
-          <div class="goods-modal">
-            <h2>AVENUE</h2>
-            <p class="goods-info">Макет для блога<br>  о путешествиях</p>
-            <a href="#">8000 Р.</a>
-          </div>
-        </div>
-        <div class="goods-item">
-          <div class="goods-title">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <img src="img/image-6.jpg" width="239" height="240" alt="DOVETAIL">
-          <div class="goods-modal">
-            <h2>DOVETAIL</h2>
-            <p class="goods-info">Интернет-магазин<br> с галереей товаров</p>
-            <a href="#">14000 Р.</a>
-        </div>
-      </div>
       </div>
 
       <!-- Переключатель страниц -->
 
       <ul class="page-selector">
-        <li><a href="#">1</a></li>
+        <li><span>1</span></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#" class="page-selector-next">следующая</a></li>
@@ -188,23 +193,44 @@
       <!-- Карта -->
 
       <div class="map">
+        <div class="container clearfix">
           <div class="map-contacts">
             <h2>NЁRDS DESIGN STUDIO</h2>
             <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
             тел. +7 (812)275-75-75</p>
           </div>
+        </div>
+
+        <!-- Форма обратной связи -->
+
+        <!-- <form class="write-us">
+          <label>
+            <input type="text" name="name">
+          </label>
+          <label>
+            <input type="text" name="e-mail">
+          </label>
+          <textarea col="452" rows="112">
+
+          </textarea>
+          <input type="submit">
+        </form> -->
       </div>
     </main>
 
     <!-- Подвал -->
 
-    <footer class="inner-footer">
-      <div class="inner-footer-social">
-        <a href="https://new.vk.com" class="vk"></a>
-        <a href="#" class="https://facebook.com"></a>
-        <a href="https://www.instagram.com" class="inst"></a>
-        <b>Давайте дружить, это выгодно!</b><br>
-        Скидка 10% для друзей из социальных сетей.
+    <footer>
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a href="https://new.vk.com" class="vk">Вконтакте</a>
+          <a href="https://facebook.com" class="fb">Facebook</a>
+          <a href="https://www.instagram.com" class="inst">Instagram</a>
+        </div>
+        <div class="footer-discount">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
   </body>

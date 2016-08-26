@@ -1,3 +1,5 @@
+/*Общее*/
+
 body {
   font-size: 16px;
   line-height: 22px;
@@ -8,7 +10,7 @@ body {
 
 h1 {
   font-size: 40px;
-  line-height: auto;
+  line-height: 52px; /*auto*/
   color: #000000;
   font-weight: normal;
   font-family: "Roboto medium", "Arial", sans-serif;
@@ -21,4 +23,226 @@ h2 {
   font-weight: normal;
   font-family: "Roboto medium", "Arial", sans-serif;
 }
-/************************************************************                                                         * *                                                         * ***********************************************************/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+}
+
+/*=========================================================
+Стили для index.html
+==========================================================*/
+
+
+/*Шапка*/
+
+.main-header .container {
+  background-color: #eeeeee;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation img,
+.main-navigation ul,
+.main-navigation li {
+  float: left;
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.user-block {
+  float: right;
+}
+
+/*Слайдер*/
+
+.slider-wrapper {
+  background-color: #eeeeee;
+}
+
+.slider-item {
+  min-height: 305px;
+}
+
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+  display: none;
+}
+
+/*Блок особенностей*/
+
+.features {
+  margin-bottom: 58px;
+  min-height: 378px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.features-item {
+  width: 240px;
+  margin-right: 80px;
+  float: left;
+
+}
+.features-item:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+/*Информация о студии*/
+
+.about {
+  width: 100%;
+  min-height: 472px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 50px;
+}
+
+.about-left {
+  float: left;
+  width: 587px;
+}
+
+.about-right {
+  float: right;
+  width: 271px;
+}
+
+/*Блок ссылок*/
+
+.links {
+  width: 100%;
+  min-height: 166px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 85px;
+  font-size: 0;
+}
+
+.links a {
+  width: 240px;
+  margin-right: 80px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
+
+/*Карта*/
+
+.map {
+  min-width: 416px;
+}
+
+.map-contacts {
+  float: left;
+  width: 250px;
+  min-height: 240px;
+}
+
+/*Подвал*/
+
+footer {
+  margin-top: 76px;
+  min-height: 145px;
+}
+
+.footer-social {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.footer-discount {
+  float: left;
+  width: 560px;
+}
+
+
+
+
+
+
+
+
+
+/*=========================================================
+Стили для inner.html
+==========================================================*/
+
+/*Шапка*/
+
+.inner-header .container {
+  background-color: #eeeeee;
+}
+
+.inner-header {
+  background-color: #eeeeee;
+}
+
+.inner-navigation img,
+.inner-navigation ul,
+.inner-navigation li {
+  float: left;
+}
+
+.inner-navigation ul {
+  list-style: none;
+}
+
+.user-block {
+  float: right;
+}
+
+.inner-header h1 {
+  clear: both;
+}
+
+.filters {
+  float: left;
+  width: 240px;
+  margin-right: 70px;
+}
+
+.filters label {
+  display: block;
+}
+
+.sort {
+  width: 570px;
+  min-height: 40px;
+}
+
+.goods {
+  float: right;
+  width: 570px;
+  min-height: 980px;
+  font-size: 0;
+}
+
+.goods-item {
+  display: inline-block;
+  width: 240px;
+  min-height: 270px;
+  margin-right: 80px;
+}
+
+.goods-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.page-selector {
+  clear: both;
+}
