@@ -43,26 +43,27 @@ h2 {
 
 /*Шапка*/
 
-.main-header .container {
-  background-color: #eeeeee;
-}
-
 .main-header {
   background-color: #eeeeee;
 }
 
-.main-navigation img,
-.main-navigation ul,
-.main-navigation li {
+.main-menu {
+  float: left;
+  width: 600px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-logo{
   float: left;
 }
-
-.main-navigation ul {
-  list-style: none;
+.main-menu li {
+  display: inline-block;
 }
 
-.user-block {
+.main-header .user-block {
   float: right;
+  width: 130px;
 }
 
 /*Слайдер*/
@@ -170,45 +171,47 @@ footer {
   width: 560px;
 }
 
-
-
-
-
-
-
-
-
 /*=========================================================
 Стили для inner.html
 ==========================================================*/
 
 /*Шапка*/
 
-.inner-header .container {
+.inner-header,
+.wrapper {
   background-color: #eeeeee;
 }
 
-.inner-header {
-  background-color: #eeeeee;
-}
-
-.inner-navigation img,
-.inner-navigation ul,
-.inner-navigation li {
+.inner-navigation {
   float: left;
+  width: 600px;
 }
 
-.inner-navigation ul {
+.inner-logo {
+  float: left;
+  width: 139px;
+}
+
+.inner-menu {
+  float: left;
+  padding-left: 0;
   list-style: none;
 }
 
-.user-block {
-  float: right;
+.inner-menu li {
+  display: inline-block;
 }
 
-.inner-header h1 {
+.inner-header .user-block {
+  float: right;
+  width: 120px;
+}
+
+.inner-title {
   clear: both;
 }
+
+/*Фильтры*/
 
 .filters {
   float: left;
@@ -220,10 +223,21 @@ footer {
   display: block;
 }
 
+/*Сортировка*/
+
 .sort {
   width: 570px;
   min-height: 40px;
+  font-size: 0;
 }
+
+.sort .sort-title,
+.sort ul,
+.sort ul li{
+  display: inline-block;
+}
+
+/*Блок товаров*/
 
 .goods {
   float: right;
@@ -243,6 +257,12 @@ footer {
   margin-right: 0;
 }
 
+/*Пагинация*/
+
 .page-selector {
   clear: both;
+}
+
+.page-selector li {
+  display: inline-block;
 }
