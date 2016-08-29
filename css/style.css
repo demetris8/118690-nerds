@@ -47,6 +47,10 @@ h2 {
   background-color: #eeeeee;
 }
 
+.main-navigation {
+  float: left;
+}
+
 .main-menu {
   float: left;
   width: 600px;
@@ -58,7 +62,7 @@ h2 {
   float: left;
 }
 .main-menu li {
-  display: inline-block;
+  float: left;
 }
 
 .main-header .user-block {
@@ -199,7 +203,7 @@ footer {
 }
 
 .inner-menu li {
-  display: inline-block;
+  float: left;
 }
 
 .inner-header .user-block {
@@ -213,8 +217,12 @@ footer {
 
 /*Фильтры*/
 
-.filters {
+.column-left {
   float: left;
+  width: 240px;
+}
+
+.filters {
   width: 240px;
   margin-right: 70px;
 }
@@ -225,23 +233,51 @@ footer {
 
 /*Сортировка*/
 
-.sort {
+.column-right {
+  float: right;
   width: 570px;
+}
+
+.sort {
   min-height: 40px;
   font-size: 0;
 }
 
-.sort .sort-title,
-.sort ul,
-.sort ul li{
+.sort ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sort-title,
+.sort-choose,
+.sort-choose li,
+.sort-direction li {
   display: inline-block;
+}
+
+.sort-choose,
+.sort-direction {
+  font-size: 0;
+}
+
+.sort-choose li {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-title {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-direction li {
+  font-size: 23px;
+  line-height: 20px;
 }
 
 /*Блок товаров*/
 
 .goods {
-  float: right;
-  width: 570px;
   min-height: 980px;
   font-size: 0;
 }
@@ -257,12 +293,30 @@ footer {
   margin-right: 0;
 }
 
+/*Модальное окно с описанием*/
+
+.goods-modal h2,
+.goods-modal a {
+  font-size: 18px;
+  line-height: 8.56px;
+  text-transform: uppercase;
+}
+
+.goods-modal p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 /*Пагинация*/
 
 .page-selector {
-  clear: both;
+  list-style: none;
+  padding-left: 0;
+  font-size: 0;
 }
 
 .page-selector li {
+  font-size: 12px;
+  line-height: 18px;
   display: inline-block;
 }
