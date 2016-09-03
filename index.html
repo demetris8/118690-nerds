@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
 	  <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -22,44 +23,46 @@
           <a class="basket" href="#">Корзина</a>
         </div>
       </div>
+
+      <div class="slider">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
     <!-- Слайдер  -->
 
     <main>
-      <div class="slider-wrapper">
-        <div class="slider container">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-          <div class="slider-controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
-          </div>
-          <div class="slider-inner">
-              <div class="slider-slides">
-                <div class="slider-item">
-                  <h2>Долго, дорого,
-                  скрупулезно.</h2>
-                  <p>Математически выверенный дизайн
-                   для вашего сайта или мобильного приложения.</p>
-                  <a href="#">Узнать больше</a>
-                </div>
-                <div class="slider-item">
-                  <h2>Любите ли вы математику, как любим ее мы?</h2>
-                  <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-                  <a href="#">Узнать больше</a>
-                </div>
-                <div class="slider-item">
-                  <h2>Только наркотики, только хардкор!</h2>
-                  <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-                  <a href="#">Узнать больше</a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Блок особенностей  -->
 
@@ -69,19 +72,19 @@
             <img src="img/features-1.png"  width="240" height="124" alt="Веб-сайты">
             <h2>Веб-сайты</h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#">Заказать</a>
+            <a class="btn btn-1" href="#">Заказать</a>
           </div>
           <div class="features-item">
             <img src="img/features-2.png"  width="240" height="124" alt="Приложения">
             <h2>Приложения</h2>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
+            <a class="btn btn-2" href="#">Заказать</a>
           </div>
           <div class="features-item">
             <img src="img/features-3.png" width="240" height="124" alt="Презентации">
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-            <a href="#">Заказать</a>
+            <a class="btn btn-3" href="#">Заказать</a>
           </div>
         </div>
 
@@ -139,8 +142,9 @@
         <div class="container clearfix">
           <div class="map-contacts">
             <h2>NЁRDS DESIGN STUDIO</h2>
-            <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
-            тел. +7 (812)275-75-75</p>
+            <p>191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8</p>
+            <p class="tel">тел. +7 (812)275-75-75</p>
+            <a class="btn write-mail" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -148,17 +152,15 @@
 
     <!-- Подвал -->
 
-    <footer>
-      <div class="container clearfix">
-        <div class="footer-social">
-          <a href="https://new.vk.com" class="vk">Вконтакте</a>
-          <a href="https://facebook.com" class="fb">Facebook</a>
-          <a href="https://www.instagram.com" class="inst">Instagram</a>
-        </div>
-        <div class="footer-discount">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+    <footer class="container clearfix">
+      <div class="footer-social">
+        <a href="https://new.vk.com" class="vk"></a>
+        <a href="https://facebook.com" class="fb"></a>
+        <a href="https://www.instagram.com" class="inst"></a>
+      </div>
+      <div class="footer-discount">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
   </body>
